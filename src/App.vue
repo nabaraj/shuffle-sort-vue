@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GridPage msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GridPage from "./components/GridPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    GridPage,
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-center {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+#app {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 </style>
